@@ -74,13 +74,16 @@ WSGI_APPLICATION = 'todo.wsgi.application'
 # }
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'todo',
         'USER': 'postgres',
         'HOST': 'localhost',
     'PASSWORD':'dellakomar24',
+    'PORT': '5432',
+    'CONNECTION_URL':'postgresql://localhost'
+    
     }
-}
+} 
 
 
 # Password validation
